@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Blog Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--NAV BAR-->
+    <nav class="nav-bar">
+      <div class="nav-text">AI Blog Generator</div>
+      <div class="nav-link">
+        <ul>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- MAIN -->
+    <div class="main-container">
+      <div class="subcontainer">
+        <div class="intro-sect">
+          <h2>Welcome to the AI Blog Generator!</h2>
+          <p>
+            Effortlessly create engaging, high-quality blog posts in seconds
+            using the power of artificial intelligence. Whether you’re a
+            seasoned writer or just starting out, our tool helps you brainstorm
+            ideas, draft content, and polish your writing with ease. Let your
+            creativity flow and watch your blog come to life!
+          </p>
+        </div>
+
+        <!--Input Section-->
+        <div class="input-sect">
+          <h2>Enter Youtube Video Link:</h2>
+          <div class="input-link">
+            <input
+              type="url"
+              id="youtube-link"
+              placeholder="Paste Youtube Link..."
+            />
+            <button>Generate</button>
+          </div>
+        </div>
+
+        <!--sect for loading circle-->
+        <div class="loading-circle"></div>
+
+        <!--Generated Article-->
+        <section>
+          <h2>Generated Blog Article</h2>
+          <div class="blog-content"></div>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      Powered by Emil ©
+      <a href="https://github.com/yomilCillo/AI-blog-generator#"
+        >Davinci Code</a
+      >
+    </footer>
+
+    <script></script>
+  </body>
+</html>
