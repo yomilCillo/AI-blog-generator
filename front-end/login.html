@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-text">AI Blog Generator</div>
+      <div class="nav-link">
+        <ul>
+          <li><a href="#">Log In</a></li>
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-container">
+      <div class="subcontainer">
+        <!-- Login form -->
+        <form>
+          <h2>Login</h2>
+          <div class="username-sect">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter your username..."
+            />
+          </div>
+          <div class="password-sect">
+            <label for="password">Password</label>
+            <input
+              type="text"
+              name="password"
+              id="password"
+              placeholder="Enter your password..."
+            />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,18 +1,30 @@
+/*
+HEADINGS BGCOLOR: #010409
+BODY BGCOLOR: #0D1117
+SUBCONTAINER BGCOLOR: #24292e
+BUTTON COLOR (DEFAULT): #1f8136
+BUTTON COLOR (HOVERED): #2dba4e
+*/
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(43, 49, 55);
+  background-color: #0d1117;
 }
 
+/*-------------- HOME PAGE --------------*/
+/*NAVIGATION BAR*/
 .nav-bar {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(36, 41, 46);
+  background-color: #010409;
   align-items: center;
-
   color: white;
 
   height: 60px;
   padding: 32px;
+
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
 }
 
 .nav-text {
@@ -20,15 +32,29 @@ body {
   font-weight: bold;
 }
 
+ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 a:hover {
   text-decoration: underline;
 }
 
+/*BODY*/
 .main-container {
   display: flex;
   flex: 1;
+  flex-direction: column;
   margin: 64px 32px;
   justify-content: center;
+  align-items: center;
 }
 
 .subcontainer {
@@ -39,11 +65,10 @@ a:hover {
   background-color: #24292e;
   margin: 32px 16px;
   padding: 32px;
-  border-radius: 20px;
-  border-style: solid;
-  border-color: white;
-  border-width: 1px;
-  max-width: 700px;
+  border-radius: 10px;
+
+  max-width: 500px;
+  width: 100%;
 }
 
 .intro-sect {
@@ -117,7 +142,115 @@ button:hover {
   }
 }
 
+/*FOOTER*/
 footer {
   text-align: center;
   color: rgb(122, 122, 122);
+}
+
+/*-------------- LOGIN PAGE --------------*/
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+form h2 {
+  font-size: 32px;
+  text-align: center;
+}
+
+form button {
+  max-width: 100px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.username-sect {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+.password-sect {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+.email-sect {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+.repeat-password-sect {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+/*-------------- ALL BLOG POST PAGE --------------*/
+
+.blog-container{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: gray;
+  padding: 12pX;
+  background-color: #24292e;
+
+}
+
+.blog-container h3{
+  font-weight: 500;
+  font-size: 24px;
+
+}
+
+hr{
+  border: 1px solid rgb(121, 120, 120);
+}
+
+.all-blog-subcontainer{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 700px;
+} 
+
+.all-blog-container{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 24px;
+}
+
+section h2{
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/*-------------- BLOG DETAILS PAGE --------------*/
+.blog-container h4{
+  font-size: 20px;
+}
+
+.blog-container a{
+  color: lightblue;
 }
